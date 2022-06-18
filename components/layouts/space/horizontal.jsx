@@ -3,24 +3,21 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 
 import { choices } from "../../tokens/tokens"
-
-import Horizontal from "./horizontal"
-import Vertical from "./vertical"
 import "./space.css"
 
 const getsize = (size) => choices.spacing[size]
 
-const Space = ({ size, children, isVisible }) => {
+const Horizontal = ({ size, children, isVisible }) => {
   return (
     <div
-      className={classNames("space", { [["isVisible"]]: isVisible })}
-      style={{ width: getsize(size), height: getsize(size) }}
+      className={classNames("horizontal", { [["isVisible"]]: isVisible })}
+      style={{ width: "100%", height: getsize(size) }}
     >
       {children}
     </div>
   )
 }
-Space.propTypes = {
+Horizontal.propTypes = {
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   children: PropTypes.node,
   isVisible: PropTypes.bool,
@@ -31,6 +28,4 @@ PropTypes.defaultProps = {
   isVisible: false,
 }
 
-Space.Horizontal = Horizontal
-Space.Vertical = Vertical
-export default Space
+export default Horizontal
