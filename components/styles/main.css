@@ -1,0 +1,11 @@
+html,
+body {
+  box-sizing: border-box;
+  font-size: var(--font-size-base-base);
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}

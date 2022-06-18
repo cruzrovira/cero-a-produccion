@@ -1,0 +1,23 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  overflow: hidden;
+  border-radius: var(--border-radius-full);
+}
+
+.dropdown-icon {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdown-select {
+  padding: 10px 40px 10px 20px;
+  color: var(--colors-font-base);
+  border: 1px solid var(--colors-primary);
+  border-radius: var(--border-radius-full);
+  appearance: none;
+}
