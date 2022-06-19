@@ -1,13 +1,14 @@
 {
   "name": "@osz/components",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A componets Library to react ",
   "main": "index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint .",
-    "build-custom-properties": "node ./tokens/build-custom-properties.jsx"
+    "build-custom-properties": "node ./tokens/build-custom-properties.jsx",
+    "prepare": "cd .. && husky install"
   },
   "keywords": [],
   "author": "",
@@ -31,10 +32,14 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "prettier": "^2.7.1",
-    "prettier-plugin-rational-order": "^1.0.3"
+    "husky": "8.0.1",
+    "lint-staged": "13.0.2",
+    "prettier": "^2.7.1"
   },
   "dependencies": {
     "classnames": "^2.3.1"
+  },
+  "lint-staged": {
+    "*{.js,.css}": "eslint --cache --fix"
   }
 }
