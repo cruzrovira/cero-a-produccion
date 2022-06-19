@@ -3,14 +3,17 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 
 import { choices } from "../../tokens/tokens"
-import "./space.css"
+
+import styles from "./space.module.css"
 
 const getsize = (size) => choices.spacing[size]
 
 const Vertical = ({ size, children, maxHeight, isVisible }) => {
   return (
     <div
-      className={classNames("vertical", { [["isVisible"]]: isVisible })}
+      className={classNames(styles.vertical, {
+        [styles.isVisible]: isVisible,
+      })}
       style={{ width: getsize(size), height: "100vh", maxHeight }}
     >
       {children}

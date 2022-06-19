@@ -1,0 +1,19 @@
+.heading {
+  line-height: 1.25;
+}
+.color-default {
+  color: var(--colors-font-base);
+}
+.color-primary {
+  color: var(--colors-primary);
+}
+
+.size-md {
+  font-size: 22px;
+}
+.size-sm {
+  font-size: 18px;
+}
+.size-xs {
+  font-size: 16px;
+}

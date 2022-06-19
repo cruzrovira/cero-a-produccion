@@ -4,14 +4,18 @@ import classNames from "classnames"
 
 import { mapSize } from "./mapSize"
 import { mapIcon } from "./mapIcon"
-import "./icon.css"
+import styles from "./icon.module.css"
 
 const Icon = ({ icon, color, size, hasBackground, ...props }) => {
   const selectColor =
     color === "primary" ? "var(--colors-primary)" : "var(--colors-eastbay)"
 
   return (
-    <div className={classNames("icon", { [["hasBackground"]]: hasBackground })}>
+    <div
+      className={classNames(styles.icon, {
+        [styles.hasBackground]: hasBackground,
+      })}
+    >
       {mapIcon(icon, selectColor, mapSize(size), props)}
     </div>
   )

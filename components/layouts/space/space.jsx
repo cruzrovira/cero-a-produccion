@@ -6,14 +6,14 @@ import { choices } from "../../tokens/tokens"
 
 import Horizontal from "./horizontal"
 import Vertical from "./vertical"
-import "./space.css"
+import styles from "./space.module.css"
 
 const getsize = (size) => choices.spacing[size]
 
 const Space = ({ size, children, isVisible }) => {
   return (
     <div
-      className={classNames("space", { [["isVisible"]]: isVisible })}
+      className={classNames(styles.space, { [styles.isVisible]: isVisible })}
       style={{ width: getsize(size), height: getsize(size) }}
     >
       {children}

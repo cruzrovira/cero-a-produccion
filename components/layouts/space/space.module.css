@@ -1,0 +1,12 @@
+.space {
+  display: inline-block;
+}
+.vertial {
+  display: block;
+}
+.horizontal {
+  display: block;
+}
+.isVisible {
+  border: 1px dashed var(--colors-primary);
+}
