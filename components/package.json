@@ -7,7 +7,6 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint .",
-    "prepare": "cd .. && husky install ",
     "build-custom-properties": "node ./tokens/build-custom-properties.jsx"
   },
   "keywords": [],
@@ -32,13 +31,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "husky": "^8.0.1",
-    "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
     "prettier-plugin-rational-order": "^1.0.3"
-  },
-  "lint-staged": {
-    "*.{js,css}": "eslint --cache --fix"
   },
   "dependencies": {
     "classnames": "^2.3.1"
