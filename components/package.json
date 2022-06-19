@@ -7,7 +7,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "eslint .",
-    "prepare": "husky install",
+    "prepare": "cd .. && husky install ",
     "build-custom-properties": "node ./tokens/build-custom-properties.jsx"
   },
   "keywords": [],
