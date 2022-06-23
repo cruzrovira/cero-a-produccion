@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test de botton Button Default 1`] = `
+<button
+  className="button"
+>
+   Button Default 
+</button>
+`;
+
+exports[`test de botton Button Primary  1`] = `
+<button
+  className="button type-primary"
+>
+   Button primary 
+</button>
+`;
+
+exports[`test de botton Button Secondary  1`] = `
+<button
+  className="button type-secondary"
+>
+   Button Secondary 
+</button>
+`;
+
+exports[`test de botton Button Tertiary  1`] = `
+<button
+  className="button type-tertiary"
+>
+   Button Tertiary 
+</button>
+`;
